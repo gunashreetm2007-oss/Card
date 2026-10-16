@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card - Neumorphism White</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #e0e5ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: #e0e5ec;
+            width: 340px;
+            padding: 30px 20px;
+            border-radius: 25px;
+            box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .avatar-container {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: #e0e5ec;
+            box-shadow: inset 6px 6px 10px #cbced1, inset -6px -6px 10px #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-container img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .designation {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .section-title {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #555555;
+            margin-bottom: 12px;
+            padding-left: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .interests-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .interest-badge {
+            background-color: #e0e5ec;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: #444444;
+            box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+-webkit-box-align: center;
+            font-weight: 500;
+        }
+
+        .action-buttons {
+            width: 100%;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 0;
+            border: none;
+            border-radius: 12px;
+            background-color: #e0e5ec;
+            color: #444444;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 6px 6px 12px #cbced1, -6px -6px 12px #ffffff;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .btn:active {
+            box-shadow: inset 4px 4px 8px #cbced1, inset -4px -4px 8px #ffffff;
+            color: #007bff;
+        }
+
+        .btn-primary {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Avatar -->
+        <div class="avatar-container">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gunashree" alt="Student Avatar">
+        </div>
+
+        <!-- Name & Designation -->
+        <div class="name">Gunashree T M</div>
+        <div class="designation">Student</div>
+
+        <!-- Interests -->
+        <div class="section-title">Interests</div>
+        <div class="interests-container">
+            <div class="interest-badge">📚 Reading books</div>
+            <div class="interest-badge">🎧 Listening music</div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="alert('Connect feature coming soon!')">Connect</button>
+            <button class="btn" onclick="alert('Profile message sent!')">Message</button>
+        </div>
+    </div>
+
+</body>
+</html>
